@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Company</title>
@@ -10,35 +11,167 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
     <!-- Section 1: ส่วนหัวของเว็บไซต์/Folk -->
     <section>
-      <!-- คนที่ได้รับมอบหมายให้ทำ Section 1 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+        <div
+            class="bg-[linear-gradient(143deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.87)_24%,rgba(255,255,255,1)_100%),url(./assets/image/background-hero-Section.svg)] bg-cover bg-center w-screen h-210">
+
+            <nav class="container mx-auto relative md:flex justify-between">
+                <div class="flex justify-between items-center py-7 px-5 md:px-0">
+                    <div class="flex text-3xl font-bold">Tripp <span class="text-red-500">.</span></div>
+                    <div class="flex h-6 md:hidden" data-collapse-toggle="navbar-default"><img
+                            src="./assets/icon/icon-menu.svg" alt="">
+                    </div>
+                </div>
+                <div class="hidden md:flex w-full items-center" id="navbar-default">
+                    <div class="flex absolute w-full z-10 top-18 md:static">
+                        <div
+                            class="flex justify-between w-full items-center mx-5 bg-gray-200/90 md:bg-transparent p-5 md:p-0 rounded-2xl md:mx-0 ">
+                            <div class="container mx-auto md:pl-120">
+                                <ul class="flex flex-col md:flex-row md:gap-10 gap-2 ">
+                                    <li class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">Home</li>
+                                    <li class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">About</li>
+                                    <li class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">Blog</li>
+                                    <li class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">Tour Package</li>
+                                </ul>
+                            </div>
+                            <button
+                                class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px]  w-[180px] h-[60px] rounded-[15px] cursor-pointer hover:scale-110 ease-in-out duration-300">Contact
+                                Us</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- hero section -->
+            <section class="container mx-auto h-150  md:pt-18 ">
+                <main class="flex flex-col md:flex-row-reverse jstify-between items-center ">
+                    <!-- right side -->
+                    <div class="container mx-auto flex items-center justify-center py-10 ">
+                        <div class=" relative">
+                            <div class="animate-fade-up animate-once animate-duration-[3000ms]">
+                                <img src="assets/image/planet.svg" alt="" class="w-75 md:w-130">
+                            </div>
+                            <!-- Mountain Scot -->
+                            <div class="absolute top-23 md:top-40 left-[-30px] md:left-[-82px]">
+                                <div
+                                    class="w-25 md:w-38 h-30 md:h-42 bg-white rounded-xl flex pl-[10px] pt-3 flex-col gap-1 md:gap-3">
+                                    <div class="w-20 md:w-33 h-22 md:h-25 bg-gray-300 rounded-lg"></div>
+                                    <p class="text-[8px] md:text-xs md:pl-0 pl-1 pt-3 md:pt-0">Mountain Scot</p>
+                                    <div class="relative w-33 h-24">
+                                        <div class="absolute bg-gray-400 rounded-full border-white border-2 
+                                                w-6 h-6 md:w-10 md:h-10 left-0 top-0"></div>
+                                        <div class="absolute bg-gray-400 rounded-full border-white border-2 
+                                                w-6 h-6 md:w-10 md:h-10 left-4 md:left-8 top-0"></div>
+                                        <div class="absolute bg-gray-400 rounded-full border-white border-2 
+                                                w-6 h-6 md:w-10 md:h-10 left-8 md:left-16 top-0"></div>
+                                        <div
+                                            class="absolute bg-gray-300 rounded-full border-white border-2 
+                                                w-6 h-6 md:w-10 md:h-10 left-12 md:left-24 top-0 flex items-center justify-center">
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- left side -->
+                    <div class="px-5 flex gap-6 flex-col">
+                        <div>
+                            <h2 class="fonrt-bold text-4xl md:text-8xl" style="font-family: paytone one;">Fuel Mind
+                                <br>by Travel</h1>
+                        </div>
+                        <div>
+                            <p class="text-gray-700 text-xl">Enthusiastically extend extensive customer service before
+                                best
+                                breed convergence completely.</p>
+                        </div>
+                    </div>
+                </main>
+                <!-- reserve info -->
+                <div class="container  md:flex md:flex-row-reverse pb-10">
+                    <div
+                        class="flex flex-col md:flex-row items-center gap-5 rounded-2xl m-5 md:my-3 md:mx-0 bg-white shadow-2xl md:w-270 ">
+                        <div class="flex flex-col md:flex-row gap-5  items-center py-7 md:p-10 md:px-20 md:w-4/5">
+                            <div>
+                                <form action="#" class="flex flex-col items-center md:items-start w-full gap-3">
+                                    <label for="location">Location <span class="text-[#FE5B3E]"><i class='bx bx-chevron-down'></i></span></label>
+                                    <select id="location" name="location" class="flex appearance-none font-medium">
+                                        <option value="volvo">Select Location</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="fiat">Fiat</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <hr class="w-10 md:w-7 h-1 border-gray-400 md:rotate-90">
+                            <div>
+                                <form action="#" class="flex flex-col items-center md:items-start gap-3 relative">
+                                    <label for="date">Date <span class="text-[#FE5B3E]"><i class='bx bx-chevron-down'></i></span></label>
+                                    <p data-collapse-toggle="calenda" class="font-medium cursor-pointer">Select Date</p>
+                                    <div id="calenda" inline-datepicker datepicker-buttons datepicker-autoselect-today class="hidden mx-auto sm:mx-0 absolute top-15 md:top-[-350px]"></div>
+                                    <!-- <div class="pt-5  dark:border-gray-800 flex sm:flex-row flex-col sm:space-x-5 rtl:space-x-reverse">
+                                <div inline-datepicker datepicker-buttons datepicker-autoselect-today class="mx-auto sm:mx-0"></div>
+                        </div> -->
+                                </form>
+                            </div>
+                            <hr class="w-10 md:w-7  h-1 border-gray-400 md:rotate-90">
+                            <div>
+                                <form action="#" class="flex flex-col items-center md:items-start gap-3">
+                                    <label for="price">Avg. Price <span class="text-[#FE5B3E]"><i class='bx bx-chevron-down'></i></span></label>
+                                    <select id="price" name="price" class="flex appearance-none font-medium">
+                                        <option value="">$300 - $600</option>
+                                        <option value="">$300 - $600</option>
+                                        <option value="">$300 - $600</option>
+                                        <option value="">$300 - $600</option>
+                                        <option value="">$300 - $600</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- explore -->
+                        <div class="mb-5 md:mb-0">
+                            <button
+                                class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px]  w-[180px] h-[60px] rounded-[15px] cursor-pointer hover:scale-110 ease-in-out duration-300">Explore
+                                <img class="inline" src="./assets/image/arrow-right.png" alt="arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </section>
 
     <!-- Section 2: ส่วนที่ 2 ของเว็บไซต์/Pond -->
 
     <section>
-      <!-- คนที่ได้รับมอบหมายให้ทำ Section 2 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+        <!-- คนที่ได้รับมอบหมายให้ทำ Section 2 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
     </section>
 
     <!-- Section 3: ส่วนที่ 3 ของเว็บไซต์/Mint -->
     <section>
-      <!-- คนที่ได้รับมอบหมายให้ทำ Section 3 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+        <!-- คนที่ได้รับมอบหมายให้ทำ Section 3 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
     </section>
 
     <!-- Section 4: ส่วนที่ 4 ของเว็บไซต์/Haja-->
     <section>
-      <!-- คนที่ได้รับมอบหมายให้ทำ Section 4 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+        <!-- คนที่ได้รับมอบหมายให้ทำ Section 4 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
     </section>
 
     <!-- Section 5: ส่วนท้ายของเว็บไซต์/Stamp -->
     <section>
-      <!-- คนที่ได้รับมอบหมายให้ทำ Section 5 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+        <!-- คนที่ได้รับมอบหมายให้ทำ Section 5 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
     </section>
-  </body>
+</body>
+
 </html>
