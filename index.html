@@ -18,6 +18,11 @@
   <!-- Flowbite -->
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -480,11 +485,85 @@
 
   </section>
 
+    <section class = "md:mt-[100px] mt-[300px] w-screen">
+        <div class = "flex flex-col items-center gap-[40px] md:gap-[90px] pt-[47px] md:pt-[69px]">
+                  
+            <div class = "text-center md:text-[48px] text-[24px] font-bold">
+                <h1 class = "">World Top Visiting
+                <br>Place in 2021</h1> 
+            </div>
+    
+            <div class = "md:w-[77%] w-[95%] relative">
+                <img src = "assets/image/background-img-map.svg" class= "w-full h-auto">
 
- 
-<section>
-  <!-- คนที่ได้รับมอบหมายให้ทำ Section 5 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-</section>
-</body>
+                <div class="absolute top-[45%] left-[19%] hover:scale-110 transition-all duration-300">
 
+                    <img src="./assets/icon/icon-mexico.svg" alt="Mexico" class="border-[5px] border-white rounded-full w-[28px] h-[28px] md:w-[120px] md:h-[120px] shadow-2xl"/>
+                    <p class = "hidden md:block text-[24px] pt-5 text-center font-bold text-[#221314]">Mexico</p>
+                    <p class = "hidden md:block text-[18px] text-center text-[#5A7184]" style="font-family: DM Sans;">03 Tour</p>
+                </div>
+                    
+                <div class="absolute top-[27%] left-[45%] hover:scale-110 transition-all duration-300">
+  
+                    <img src="./assets/icon/icon-france.svg" alt="France" class="border-[5px] border-white rounded-full w-[28px] h-[28px] md:w-[120px] md:h-[120px] shadow-2xl"/>
+                    <p class = "hidden md:block text-[24px] pt-5 text-center font-bold text-[#221314]">France</p>
+                    <p class = "hidden md:block text-[18px] text-center text-[#5A7184]" style="font-family: DM Sans;" >03 Tour</p>
+                </div>
+                    
+                <div class="absolute top-[65%] left-[82%] hover:scale-110 transition-all duration-300">
+                    <img src="./assets/icon/icon-australia.svg" alt="Australia" class="border-[5px] border-white rounded-full w-[28px] h-[28px] md:w-[120px] md:h-[120px] shadow-2xl"/>
+                    <p class = "hidden md:block text-[24px] pt-5 text-center font-bold text-[#221314]">Australia</p>
+                    <p class = "hidden md:block text-[18px] text-center text-[#5A7184]" style="font-family: DM Sans;">02 Tour</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+    <footer class = "bg-[url('./assets/image/background-img-footer.svg')] bg-cover bg-center w-screen">
+            <!-- item container-->
+            <div class = "flex flex-col gap-[30px] md:gap-[50px] md:pt-[220px] pt-[80px] pb-[20px] md:pb-[60px]">
+
+                <div class = 'md:ml-[250px] ml-[24px]'>
+                    <p class = "md:text-[48px] text-[30px] font-bold">Subscribe 
+                        <br>for every Tour 
+                        <br>News & Tips</p>  
+                </div>
+
+                <form class="flex items-center bg-white p-3 rounded-[20px] md:w-[574px] md:h-[100px] w-[355] h-[100] md:ml-[250px] ml-[10px]">
+                    <input type="email" placeholder="Enter Your Email" class="flex-grow p-6 text-[16px] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-blue-50 transition-all duration-300"/>
+                    <button
+                    class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px] font-bold md:w-[177px] w-[160px] h-[70px] rounded-[15px] cursor-pointer hover:scale-110 transition-all duration-300">Subscribe
+                    <img class="inline" src="./assets/image/arrow-right.png" alt="arrow"></button>
+                </form>
+
+                <div class="flex justify-between md:items-center flex-col md:flex-row pt-[40px] px-[10px] md:ml-[250px] ml-[24px] w-1/2">
+                    <div class="">
+                        <img src="./assets/image/logo-trip.svg" alt="Tripp Logo" class=""/>
+                        <p class="text-[18px]">Copyright © Tripp. All rights reserved</p>
+                    </div>
+                    <div class="flex gap-[6px] md:self-end mt-[16px]">
+
+                        <a href = "https://www.google.com" target="_blank">
+                            <img src= "./assets/icon/icon-google.svg" alt="Google" class="rounded-full hover:scale-110 hover:shadow-lg transition-all duration-300"/>
+                        </a>
+
+                        <a href = "https://www.x.com" target="_blank">
+                            <img src="./assets/icon/icon-twitter.svg" alt="Twitter" class="rounded-full hover:scale-110 hover:shadow-lg transition-all duration-300"/>
+                        </a>
+
+                        <a href = "https://www.instagram.com/" target="_blank">
+                            <img src="./assets/icon/icon-instagram.svg" alt="Instagram" class="rounded-full hover:scale-110 hover:shadow-lg transition-all duration-300"/>
+                        </a>
+
+                        <a href = "https://www.linkedin.com/" target="_blank">
+                            <img src="./assets/icon/icon-linkedin.svg" alt="LinkedIn" class="rounded-full hover:scale-110 hover:shadow-lg transition-all duration-300"/>
+                        </a>
+
+                    </div>
+                </div>
+            </div>   
+    </footer>
+
+  </body>
 </html>
