@@ -246,26 +246,28 @@
     </section>
 
     <!-- Section 3: ส่วนที่ 3 ของเว็บไซต์/Mint -->
-    <section class="items-center bg-red-500">
+    <section>
       <!-- คนที่ได้รับมอบหมายให้ทำ Section 3 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-        <div class="container mx-auto items-center my-[160px] bg-blue-50">
-          <topic class="flex flex-col justify-center text-center font-bold text-5xl gap-1">
+        <div class="container mx-auto justify-center my-90 md:my-[160px]">
+          <topic class="flex flex-col justify-center text-center font-bold text-2xl md:text-5xl gap-1">
             <h1>Our Upcoming</h1>
             <h1>Tour Package</h1>
           </topic>
           <!-- frame card -->
-          <framecard class="flex flex-row justify-between items-center gap-3 text-3xl w-full mx-auto">
+          <framecard class="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-5 text-2xl md:text-3xl w-full">
             <!-- Eiffel card -->
-            <div class="bg-green-400">
-              <card class="bg-[#C4C4C4] text-white w-30 h-40 mt-[110px] hover:mt-[70px] flex justify-end items-start p-4 rounded-2xl ">$599</card>
-              <div class="flex justify-between items-start mt-3">
-                <img src="assets/icon/icon-Location.svg" alt="location-icon" class=" px-3 mt-1"/>
-                <div>
-                  <h3 class="text-2xl text-[#221314] font-bold">Eiffel Tower</h3>
-                  <h4 class="text-[18px] text-[#5A7184]">5d - 4n</h4>
+            <div class="w-[full] md:w-[450px] h-[600px] transition-all duration-300 ease-in-out hover:scale-110 md:hover:scale-105">
+              <card class="bg-[#C4C4C4] text-white w-full h-[80%] mt-10 mb-6 md:mt-[110px] md:hover:mt-[70px] flex justify-end items-start p-4 rounded-2xl ">$599</card>
+              <div class="w-full flex justify-between items-start mt-3">
+                <div class="flex items-start gap-2">
+                  <img src="assets/icon/icon-Location.svg" alt="location-icon" class=" px-3 mt-1"/>
+                  <div class="items-start">
+                    <h3 class="text-2xl  text-[#221314] font-bold ">Eiffel Tower</h3>
+                    <h4 class="text-[18px] text-[#5A7184]">5d - 4n</h4>
+                  </div>
                 </div>
                 <!-- star rating -->
-                <star class="flex flex-row ">
+                <star class="flex flex-row p-4">
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
@@ -276,16 +278,18 @@
             </div>
 
             <!-- Big Bear Lake card -->
-            <div>
-              <card class="bg-[#C4C4C4] text-white w-[450px] h-[520px] mt-[110px] hover:mt-[70px] flex justify-end items-start p-4 rounded-2xl">$480</card>
+            <div class="w-[450px] h-[600px] hidden md:block md:hover:scale-105">
+              <card class="bg-[#C4C4C4] text-white w-full h-[80%] mt-[110px] hover:mt-[70px] flex justify-end items-start p-4 rounded-2xl">$480</card>
               <div class="flex justify-between items-start mt-3">
-                <img src="assets/icon/icon-Location.svg" alt="location-icon" class=" px-3 mt-1"/>
-                <div>
-                  <h3 class="text-2xl text-[#221314] font-bold">Big Bear Lake</h3>
-                  <h4 class="text-[18px] text-[#5A7184]">5d - 4n</h4>
+                <div class="flex items-start gap-2">
+                  <img src="assets/icon/icon-Location.svg" alt="location-icon" class=" px-3 mt-1"/>
+                  <div >
+                    <h3 class="text-2xl text-[#221314] font-bold">Big Bear Lake</h3>
+                    <h4 class="text-[18px] text-[#5A7184]">5d - 4n</h4>
+                  </div>
                 </div>
                 <!-- Star Rating -->
-                <star class="flex flex-row ">
+                <star class="flex flex-row p-4">
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
@@ -296,16 +300,18 @@
             </div>
 
             <!-- Colorado Springs card -->
-            <div>
-              <card class="bg-[#C4C4C4] text-white w-[450px] h-[520px] mt-[110px] hover:mt-[70px] flex justify-end items-start p-4 rounded-2xl">$550</card>
+            <div class="w-[450px] h-[600px] hidden md:block md:hover:scale-105">
+              <card class="bg-[#C4C4C4] text-white w-full h-[80%] mt-[110px] hover:mt-[70px] flex justify-end items-start p-4 rounded-2xl">$550</card>
               <div class="flex justify-between items-start mt-3">
-                <img src="assets/icon/icon-Location.svg" alt="location-icon" class=" px-3 mt-1"/>
-                <div>
-                  <h3 class="text-2xl text-[#221314] font-bold">Colorado Springs</h3>
-                  <h4 class="text-[18px] text-[#5A7184]">5d - 4n</h4>
+                <div class="flex items-start gap-2">
+                  <img src="assets/icon/icon-Location.svg" alt="location-icon" class=" px-3 mt-1"/>
+                  <div>
+                    <h3 class="text-2xl text-[#221314] font-bold">Colorado Springs</h3>
+                    <h4 class="text-[18px] text-[#5A7184]">5d - 4n</h4>
+                  </div>
                 </div>
                 <!-- Star Rating -->
-                <star class="flex flex-row ">
+                <star class="flex flex-row p-4">
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
                   <icon class=><img src="assets/icon/icon-Star.svg" alt="star-icon" /> </icon>
@@ -317,10 +323,9 @@
           </framecard>
 
           <!-- View All Button -->
-          <div class="w-full mt-[40px] mx-auto flex justify-center">
+          <div class="w-full mt-[40px] md:mt-30 mx-auto flex justify-center">
             <button
-            class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px] font-bold w-[180px] h-[70px] rounded-[15px] cursor-pointer ">View
-            All <img class="inline" src="assets/icon/bi_arrow-left.svg" alt="left-arrow"></button>
+            class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px] font-bold w-[180px] h-[70px] rounded-[15px] cursor-pointer transition-all duration-300 ease-in-out hover:scale-110">View All <img class="inline" src="assets/icon/bi_arrow-left.svg" alt="left-arrow"></button>
           </div>
         </div>
     </section>
