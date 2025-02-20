@@ -7,7 +7,6 @@
     <title>Travel Company</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 
 <body>
@@ -38,10 +36,18 @@
                             class="flex justify-between w-full items-center mx-5 bg-gray-200/90 md:bg-transparent p-5 md:p-0 rounded-2xl md:mx-0 ">
                             <div class="container mx-auto md:pl-120">
                                 <ul class="flex flex-col md:flex-row md:gap-10 gap-2 ">
-                                    <li class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">Home</li>
-                                    <li class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">About</li>
-                                    <li class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">Blog</li>
-                                    <li class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">Tour Package</li>
+                                    <li
+                                        class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
+                                        Home</li>
+                                    <li
+                                        class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
+                                        About</li>
+                                    <li
+                                        class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
+                                        Blog</li>
+                                    <li
+                                        class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
+                                        Tour Package</li>
                                 </ul>
                             </div>
                             <button
@@ -55,6 +61,27 @@
             <section class="container mx-auto h-150  md:pt-18 ">
                 <main class="flex flex-col md:flex-row-reverse jstify-between items-center ">
                     <!-- right side -->
+                    <!-- planet animation desktop -->
+                    <div class="hidden md:flex absolute right-138">
+                        <div class="orbit mercury-orbit"></div>
+                        <div class="mercury-spin">
+                            <div id="mercury"></div>
+                        </div>
+                        <div class="orbit venus-orbit "></div>
+                        <div class="venus-spin">
+                            <div id="venus"></div>
+                        </div>
+                    </div>
+                    <!-- planet animation mobile -->
+                    <div class="flex md:hidden absolute top-71">
+
+                        <div class="orbit venus-orbit2"></div>
+                        <div class="venus-spin2">
+                            <div id="venus"></div>
+                        </div>
+                    </div>
+
+
                     <div class="container mx-auto flex items-center justify-center py-10 ">
                         <div class=" relative">
                             <div class="animate-fade-up animate-once animate-duration-[3000ms]">
@@ -76,12 +103,8 @@
                                         <div
                                             class="absolute bg-gray-300 rounded-full border-white border-2 
                                                 w-6 h-6 md:w-10 md:h-10 left-12 md:left-24 top-0 flex items-center justify-center">
-
                                         </div>
                                     </div>
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -106,7 +129,8 @@
                         <div class="flex flex-col md:flex-row gap-5  items-center py-7 md:p-10 md:px-20 md:w-4/5">
                             <div>
                                 <form action="#" class="flex flex-col items-center md:items-start w-full gap-3">
-                                    <label for="location">Location <span class="text-[#FE5B3E]"><i class='bx bx-chevron-down'></i></span></label>
+                                    <label for="location">Location <span class="text-[#FE5B3E]"><i
+                                                class='bx bx-chevron-down'></i></span></label>
                                     <select id="location" name="location" class="flex appearance-none font-medium">
                                         <option value="volvo">Select Location</option>
                                         <option value="saab">Saab</option>
@@ -118,18 +142,18 @@
                             <hr class="w-10 md:w-7 h-1 border-gray-400 md:rotate-90">
                             <div>
                                 <form action="#" class="flex flex-col items-center md:items-start gap-3 relative">
-                                    <label for="date">Date <span class="text-[#FE5B3E]"><i class='bx bx-chevron-down'></i></span></label>
+                                    <label for="date">Date <span class="text-[#FE5B3E]"><i
+                                                class='bx bx-chevron-down'></i></span></label>
                                     <p data-collapse-toggle="calenda" class="font-medium cursor-pointer">Select Date</p>
-                                    <div id="calenda" inline-datepicker datepicker-buttons datepicker-autoselect-today class="hidden mx-auto sm:mx-0 absolute top-15 md:top-[-350px]"></div>
-                                    <!-- <div class="pt-5  dark:border-gray-800 flex sm:flex-row flex-col sm:space-x-5 rtl:space-x-reverse">
-                                <div inline-datepicker datepicker-buttons datepicker-autoselect-today class="mx-auto sm:mx-0"></div>
-                        </div> -->
+                                    <div id="calenda" inline-datepicker datepicker-buttons datepicker-autoselect-today
+                                        class="hidden mx-auto sm:mx-0 absolute top-15 md:top-[-350px]"></div>
                                 </form>
                             </div>
                             <hr class="w-10 md:w-7  h-1 border-gray-400 md:rotate-90">
                             <div>
                                 <form action="#" class="flex flex-col items-center md:items-start gap-3">
-                                    <label for="price">Avg. Price <span class="text-[#FE5B3E]"><i class='bx bx-chevron-down'></i></span></label>
+                                    <label for="price">Avg. Price <span class="text-[#FE5B3E]"><i
+                                                class='bx bx-chevron-down'></i></span></label>
                                     <select id="price" name="price" class="flex appearance-none font-medium">
                                         <option value="">$300 - $600</option>
                                         <option value="">$300 - $600</option>
