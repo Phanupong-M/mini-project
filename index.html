@@ -2,179 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Company</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Company</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Flowbite -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
 </head>
 
 <body>
-    <!-- Section 1: ส่วนหัวของเว็บไซต์/Folk -->
-    <section>
-        <div
-            class="bg-[linear-gradient(143deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.87)_24%,rgba(255,255,255,1)_100%),url(./assets/image/background-hero-Section.svg)] bg-cover bg-center w-screen h-210">
+  <!-- Section 1: ส่วนหัวของเว็บไซต์/Folk -->
+  <section>
+    <div
+      class="bg-[linear-gradient(143deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.87)_24%,rgba(255,255,255,1)_100%),url(./assets/image/background-hero-Section.svg)] bg-cover bg-center w-full h-210">
 
-            <nav class="container mx-auto relative md:flex justify-between">
-                <div class="flex justify-between items-center py-7 px-5 md:px-0">
-                    <div class="flex text-3xl font-bold">Tripp <span class="text-red-500">.</span></div>
-                    <div class="flex h-6 md:hidden" data-collapse-toggle="navbar-default"><img
-                            src="./assets/icon/icon-menu.svg" alt="">
-                    </div>
-                </div>
-                <div class="hidden md:flex w-full items-center" id="navbar-default">
-                    <div class="flex absolute w-full z-10 top-18 md:static">
-                        <div
-                            class="flex justify-between w-full items-center mx-5 bg-gray-200/90 md:bg-transparent p-5 md:p-0 rounded-2xl md:mx-0 ">
-                            <div class="container mx-auto md:pl-120">
-                                <ul class="flex flex-col md:flex-row md:gap-10 gap-2 ">
-                                    <li
-                                        class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
-                                        Home</li>
-                                    <li
-                                        class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
-                                        About</li>
-                                    <li
-                                        class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
-                                        Blog</li>
-                                    <li
-                                        class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
-                                        Tour Package</li>
-                                </ul>
-                            </div>
-                            <button
-                                class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px]  w-[180px] h-[60px] rounded-[15px] cursor-pointer hover:scale-110 ease-in-out duration-300">Contact
-                                Us</button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- hero section -->
-            <section class="container mx-auto h-150  md:pt-18 ">
-                <main class="flex flex-col md:flex-row-reverse jstify-between items-center ">
-                    <!-- right side -->
-                    <!-- planet animation desktop -->
-                    <div class="hidden md:flex absolute right-138">
-                        <div class="orbit mercury-orbit"></div>
-                        <div class="mercury-spin">
-                            <div id="mercury"></div>
-                        </div>
-                        <div class="orbit venus-orbit "></div>
-                        <div class="venus-spin">
-                            <div id="venus"></div>
-                        </div>
-                    </div>
-                    <!-- planet animation mobile -->
-                    <div class="flex md:hidden absolute top-71">
-
-                        <div class="orbit venus-orbit2"></div>
-                        <div class="venus-spin2">
-                            <div id="venus"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="container mx-auto flex items-center justify-center py-10 ">
-                        <div class=" relative">
-                            <div class="animate-fade-up animate-once animate-duration-[3000ms]">
-                                <img src="assets/image/planet.svg" alt="" class="w-75 md:w-130">
-                            </div>
-                            <!-- Mountain Scot -->
-                            <div class="absolute top-23 md:top-40 left-[-30px] md:left-[-82px]">
-                                <div
-                                    class="w-25 md:w-38 h-30 md:h-42 bg-white rounded-xl flex pl-[10px] pt-3 flex-col gap-1 md:gap-3">
-                                    <div class="w-20 md:w-33 h-22 md:h-25 bg-gray-300 rounded-lg"></div>
-                                    <p class="text-[8px] md:text-xs md:pl-0 pl-1 pt-3 md:pt-0">Mountain Scot</p>
-                                    <div class="relative w-33 h-24">
-                                        <div class="absolute bg-gray-400 rounded-full border-white border-2 
-                                                w-6 h-6 md:w-10 md:h-10 left-0 top-0"></div>
-                                        <div class="absolute bg-gray-400 rounded-full border-white border-2 
-                                                w-6 h-6 md:w-10 md:h-10 left-4 md:left-8 top-0"></div>
-                                        <div class="absolute bg-gray-400 rounded-full border-white border-2 
-                                                w-6 h-6 md:w-10 md:h-10 left-8 md:left-16 top-0"></div>
-                                        <div
-                                            class="absolute bg-gray-300 rounded-full border-white border-2 
-                                                w-6 h-6 md:w-10 md:h-10 left-12 md:left-24 top-0 flex items-center justify-center">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- left side -->
-                    <div class="px-5 flex gap-6 flex-col">
-                        <div>
-                            <h2 class="font-bold text-4xl md:text-8xl" style="font-family: paytone one;">Fuel Mind
-                                <br>by Travel</h1>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 text-xl">Enthusiastically extend extensive customer service before
-                                best
-                                breed convergence completely.</p>
-                        </div>
-                    </div>
-                </main>
-                <!-- reserve info -->
-                <div class="container  md:flex md:flex-row-reverse pb-10">
-                    <div
-                        class="flex flex-col md:flex-row items-center gap-5 rounded-2xl m-5 md:my-3 md:mx-0 bg-white shadow-2xl md:w-270 ">
-                        <div class="flex flex-col md:flex-row gap-5  items-center py-7 md:p-10 md:px-20 md:w-4/5">
-                            <div>
-                                <form action="#" class="flex flex-col items-center md:items-start w-full gap-3">
-                                    <label for="location">Location <span class="text-[#FE5B3E]"><i
-                                                class='bx bx-chevron-down'></i></span></label>
-                                    <select id="location" name="location" class="flex appearance-none font-medium">
-                                        <option value="volvo">Select Location</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="fiat">Fiat</option>
-                                        <option value="audi">Audi</option>
-                                    </select>
-                                </form>
-                            </div>
-                            <hr class="w-10 md:w-7 h-1 border-gray-400 md:rotate-90">
-                            <div>
-                                <form action="#" class="flex flex-col items-center md:items-start gap-3 relative">
-                                    <label for="date">Date <span class="text-[#FE5B3E]"><i
-                                                class='bx bx-chevron-down'></i></span></label>
-                                    <p data-collapse-toggle="calenda" class="font-medium cursor-pointer">Select Date</p>
-                                    <div id="calenda" inline-datepicker datepicker-buttons datepicker-autoselect-today
-                                        class="hidden mx-auto sm:mx-0 absolute top-15 md:top-[-350px]"></div>
-                                </form>
-                            </div>
-                            <hr class="w-10 md:w-7  h-1 border-gray-400 md:rotate-90">
-                            <div>
-                                <form action="#" class="flex flex-col items-center md:items-start gap-3">
-                                    <label for="price">Avg. Price <span class="text-[#FE5B3E]"><i
-                                                class='bx bx-chevron-down'></i></span></label>
-                                    <select id="price" name="price" class="flex appearance-none font-medium">
-                                        <option value="">$300 - $600</option>
-                                        <option value="">$300 - $600</option>
-                                        <option value="">$300 - $600</option>
-                                        <option value="">$300 - $600</option>
-                                        <option value="">$300 - $600</option>
-                                    </select>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- explore -->
-                        <div class="mb-5 md:mb-0">
-                            <button
-                                class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px]  w-[180px] h-[60px] rounded-[15px] cursor-pointer hover:scale-110 ease-in-out duration-300">Explore
-                                <img class="inline" src="./assets/image/arrow-right.png" alt="arrow"></button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <nav class="container mx-auto relative md:flex justify-between">
+        <div class="flex justify-between items-center py-7 px-5 md:px-0">
+          <div class="flex text-3xl font-bold">Tripp <span class="text-red-500">.</span></div>
+          <div class="flex h-6 md:hidden" data-collapse-toggle="navbar-default"><img src="./assets/icon/icon-menu.svg"
+              alt="">
+          </div>
         </div>
-    </section>
+        <div class="hidden md:flex w-full items-center" id="navbar-default">
+          <div class="flex absolute w-full z-10 top-18 md:static">
+            <div
+              class="flex justify-between w-full items-center mx-5 bg-gray-200/90 md:bg-transparent p-5 md:p-0 rounded-2xl md:mx-0 ">
+              <div class="container mx-auto md:pl-120">
+                <ul class="flex flex-col md:flex-row md:gap-10 gap-2 ">
+                  <li
+                    class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
+                    Home</li>
+                  <li
+                    class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
+                    About</li>
+                  <li
+                    class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
+                    Blog</li>
+                  <li
+                    class="text-gray-600 hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-[#FE5B3E] cursor-pointer ">
+                    Tour Package</li>
+                </ul>
+              </div>
+              <button
+                class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px]  w-[180px] h-[60px] rounded-[15px] cursor-pointer hover:scale-110 ease-in-out duration-300">Contact
+                Us</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- hero section -->
+      <section class="container mx-auto h-150  md:pt-18 ">
+        <main class="flex flex-col md:flex-row-reverse jstify-between items-center ">
+          <!-- right side -->
+          <!-- planet animation desktop -->
+          <div class="hidden md:flex absolute right-138">
+            <div class="orbit mercury-orbit"></div>
+            <div class="mercury-spin">
+              <div id="mercury"></div>
+            </div>
+            <div class="orbit venus-orbit "></div>
+            <div class="venus-spin">
+              <div id="venus"></div>
+            </div>
+          </div>
+          <!-- planet animation mobile -->
+          <div class="flex md:hidden absolute top-71">
+
+            <div class="orbit venus-orbit2"></div>
+            <div class="venus-spin2">
+              <div id="venus"></div>
+            </div>
+          </div>
+
+
+          <div class="container mx-auto flex items-center justify-center py-10 ">
+            <div class=" relative">
+              <div class="animate-fade-up animate-once animate-duration-[3000ms]">
+                <img src="assets/image/planet.svg" alt="" class="w-75 md:w-130">
+              </div>
+              <!-- Mountain Scot -->
+              <div class="absolute top-23 md:top-40 left-[-30px] md:left-[-82px]">
+                <div class="w-25 md:w-38 h-30 md:h-42 bg-white rounded-xl flex pl-[10px] pt-3 flex-col gap-1 md:gap-3">
+                  <div class="w-20 md:w-33 h-22 md:h-25 bg-gray-300 rounded-lg"></div>
+                  <p class="text-[8px] md:text-xs md:pl-0 pl-1 pt-3 md:pt-0">Mountain Scot</p>
+                  <div class="relative w-33 h-24">
+                    <div class="absolute bg-gray-400 rounded-full border-white border-2 
+                                                w-6 h-6 md:w-10 md:h-10 left-0 top-0"></div>
+                    <div class="absolute bg-gray-400 rounded-full border-white border-2 
+                                                w-6 h-6 md:w-10 md:h-10 left-4 md:left-8 top-0"></div>
+                    <div class="absolute bg-gray-400 rounded-full border-white border-2 
+                                                w-6 h-6 md:w-10 md:h-10 left-8 md:left-16 top-0"></div>
+                    <div
+                      class="absolute bg-gray-300 rounded-full border-white border-2 
+                                                w-6 h-6 md:w-10 md:h-10 left-12 md:left-24 top-0 flex items-center justify-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- left side -->
+          <div class="px-5 flex gap-6 flex-col">
+            <div>
+              <h2 class="font-bold text-4xl md:text-8xl" style="font-family: paytone one;">Fuel Mind
+                <br>by Travel</h1>
+            </div>
+            <div>
+              <p class="text-gray-700 text-xl">Enthusiastically extend extensive customer service before
+                best
+                breed convergence completely.</p>
+            </div>
+          </div>
+        </main>
+        <!-- reserve info -->
+        <div class="container  md:flex md:flex-row-reverse pb-10">
+          <div
+            class="flex flex-col md:flex-row items-center gap-5 rounded-2xl m-5 md:my-3 md:mx-0 bg-white shadow-2xl md:w-270 ">
+            <div class="flex flex-col md:flex-row gap-5  items-center py-7 md:p-10 md:px-20 md:w-4/5">
+              <div>
+                <form action="#" class="flex flex-col items-center md:items-start w-full gap-3">
+                  <label for="location">Location <span class="text-[#FE5B3E]"><i
+                        class='bx bx-chevron-down'></i></span></label>
+                  <select id="location" name="location" class="flex appearance-none font-medium">
+                    <option value="volvo">Select Location</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </form>
+              </div>
+              <hr class="w-10 md:w-7 h-1 border-gray-400 md:rotate-90">
+              <div>
+                <form action="#" class="flex flex-col items-center md:items-start gap-3 relative">
+                  <label for="date">Date <span class="text-[#FE5B3E]"><i class='bx bx-chevron-down'></i></span></label>
+                  <p data-collapse-toggle="calenda" class="font-medium cursor-pointer">Select Date</p>
+                  <div id="calenda" inline-datepicker datepicker-buttons datepicker-autoselect-today
+                    class="hidden mx-auto sm:mx-0 absolute top-15 md:top-[-350px]"></div>
+                </form>
+              </div>
+              <hr class="w-10 md:w-7  h-1 border-gray-400 md:rotate-90">
+              <div>
+                <form action="#" class="flex flex-col items-center md:items-start gap-3">
+                  <label for="price">Avg. Price <span class="text-[#FE5B3E]"><i
+                        class='bx bx-chevron-down'></i></span></label>
+                  <select id="price" name="price" class="flex appearance-none font-medium">
+                    <option value="">$300 - $600</option>
+                    <option value="">$300 - $600</option>
+                    <option value="">$300 - $600</option>
+                    <option value="">$300 - $600</option>
+                    <option value="">$300 - $600</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+            <!-- explore -->
+            <div class="mb-5 md:mb-0">
+              <button
+                class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px]  w-[180px] h-[60px] rounded-[15px] cursor-pointer hover:scale-110 ease-in-out duration-300">Explore
+                <img class="inline" src="./assets/image/arrow-right.png" alt="arrow"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
 
     <!-- Section 2: ส่วนที่ 2 ของเว็บไซต์/Pond -->
 
@@ -330,15 +332,160 @@
         </div>
     </section>
 
-    <!-- Section 4: ส่วนที่ 4 ของเว็บไซต์/Haja-->
-    <section>
-        <!-- คนที่ได้รับมอบหมายให้ทำ Section 4 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-    </section>
 
-    <!-- Section 5: ส่วนท้ายของเว็บไซต์/Stamp -->
-    <section>
-        <!-- คนที่ได้รับมอบหมายให้ทำ Section 5 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-    </section>
+
+  <!-- Popular Destination Section-->
+  <section class="overflow-x-hidden">
+    <div
+      class="h-[1094px] bg-[#FEF9F3] md:w-full md:flex md:flex-row-reverse md:justify-center md:items-center md:border">
+      <!-- Article Box -->
+      <div class="pt-[164px] pl-6 md:pt-0 md:h-[406px] md:w-[574px] md:flex md:flex-col">
+        <div class="text-[#221314] font-bold leading-[34px] md:text-[48px] md:font-bold md:leading-[68px]">Most Popular
+          Destination of Us!
+        </div>
+        <div class="md:text-[18px] md:font-normal md:leading-[40px]">
+          Credibly unleash economically sound e-business with bleeding-edge users. Uniquely simplify
+          mission-critical benefits with cross-unit manufactured products. Energistically re-engineer
+        </div>
+
+      </div>
+
+      <!-- Travel Carousel -->
+      <div class="flex-col items-center justify-center md:border">
+        <div id="indicators-carousel" class="relative w-[300px] mt-[40px] mx-auto md:w-[1200px]" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div class="relative  rounded-lg h-[450px] overflow-hidden md:overflow-visible md:w-[1200px]">
+            <!-- Item 1 -->
+            <div
+              class="carousel-item h-[450px] w-[300px] md:w-[332px] bg-[#C4C4C4] rounded-[20px] relative mx-auto duration-700 ease-in-out flex flex-col justify-end p-7 md:mr-[500px]"
+              data-carousel-item>
+              <div class="absolute bottom-7 left-7">
+                <div class="text-white text-[20px] font-semibold leading-8">Great Wall of China</div>
+                <div class="text-white text-[18px] font-normal leading-7">Beijing, China</div>
+              </div>
+              <img class="absolute bottom-[45px] right-7" src="./assets/image/rating.png" alt="rating">
+            </div>
+
+            <!-- Item 2 -->
+
+            <div
+              class="carousel-item h-[450px] w-[300px] md:w-[332px] bg-[#C4C4C4] rounded-[20px] relative mx-auto duration-700 ease-in-out  flex-col justify-end p-7 hidden top-[-450px] md:mr-[450px]"
+              data-carousel-item="active">
+              <div class="absolute bottom-7 left-7">
+                <div class="text-white text-[20px] font-semibold leading-8">Lake Powell</div>
+                <div class="text-white text-[18px] font-normal leading-7">U.S.A</div>
+              </div>
+              <img class="absolute bottom-[45px] right-7" src="./assets/image/rating.png" alt="rating">
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="carousel-item h-[450px] w-[300px] md:w-[332px] bg-[#C4C4C4] rounded-[20px] relative duration-700 ease-in-out flex-col justify-end p-7 hidden top-[-900px] mx-auto md:mr-[400px]"
+              data-carousel-item>
+              <div class="absolute bottom-7 left-7">
+                <div class="text-white text-[20px] font-semibold leading-8">Deep Creek Lake</div>
+                <div class="text-white text-[18px] font-normal leading-7">Maryland</div>
+              </div>
+              <img class="absolute bottom-[45px] right-7" src="./assets/image/rating.png" alt="rating">
+            </div>
+          </div>
+
+          <!-- Slider indicators -->
+          <div class="absolute z-30 flex space-x-3 rtl:space-x-reverse mt-8 left-1/2 -translate-x-1/2 md:hidden">
+            <button type="button" class="w-3 h-3 !bg-[#E9E4DE] rounded-full focus:ring-1 focus:ring-[#FF8345]"
+              aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 !bg-[#E9E4DE] rounded-full focus:ring-1 focus:ring-[#FF8345]"
+              aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 !bg-[#E9E4DE] rounded-full focus:ring-1 focus:ring-[#FF8345]"
+              aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          </div>
+
+          <!-- Slider controls -->
+          <div class="hidden md:block ">
+            <button type="button"
+              class="absolute bg-black start-0 z-30 flex items-center justify-center h-[40px] px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button type="button"
+              class="absolute bg-black end-0 z-30 flex items-center justify-center h-[40px] px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+
+          </div>
+
+
+        </div>
+
+        <!-- View All Button -->
+        <div class="w-full mt-[80px] mx-auto flex justify-center">
+          <button
+            class="bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] text-white text-[16px] font-bold w-[180px] h-[70px] rounded-[15px] cursor-pointer ">View
+            All <img class="inline" src="./assets/image/arrow-right.png" alt="arrow"></button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+  <!-- Feedback section -->
+  <section class="h-[1008px] md:flex md:h-[987px] md:items-center md:gap-[100px] contents">
+    <div class="h-[409.53px] relative mx-2 mt-8 flex justify-center md:w-[632px] md:h-[736px]">
+      <img class="absolute top-[50px] md:top-[90px]" src="./assets/image/outside-Ellipse.png" alt="outside eclipse">
+      <img class="absolute top-[85px] md:top-[120px] md:pl-5 pl-3 mx-auto" src="./assets/image/planet.png" alt="planet">
+    </div>
+    <div class="h-[500px] m-5 flex flex-col justify-between md:h-[513px] md:with-571px">
+      <div class="font-bold text-[24px] leading-[34px] md:font-bold md:text-[48px] md:leading-[68px]">
+        Feedback from Our Customers
+      </div>
+
+      <div class="text-[20px] font-semibold leading-[40px] md:text-[24px] md:leading-[48px]">
+        “I’ve Went ot America from Tripp Play about 1 years ago. Tripp make the prototyping process so easy and faster.
+        I feel this is the best apps for Prototyping use”
+      </div>
+      <div class="text-[#5A7184] text-[18px] font-normal">
+        — Ferdous - CEO of Coco
+      </div>
+      <div class="flex w-[106px] justify-center items-center">
+        <button>
+          <img src="./assets/image/button-Arrow - Left.png" alt="arrow-right">
+        </button>
+        <button>
+          <img src="./assets/image/button-Arrow - Right.png" alt="arrow-left">
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+\]
+
+<!-- Section 5: ส่วนท้ายของเว็บไซต์/Stamp -->
+<section>
+  <!-- คนที่ได้รับมอบหมายให้ทำ Section 5 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+</section>
 </body>
 
 </html>
